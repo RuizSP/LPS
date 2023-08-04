@@ -1,0 +1,96 @@
+/*
+ * To change this license header, choose License Headers in ProjetoBD Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package controller;
+
+import java.util.List;
+import javax.swing.table.AbstractTableModel;
+import model.Professor;
+
+/**
+ *
+ * @author jose
+ */
+public class TMCadProfessor extends AbstractTableModel {
+
+    private List<Professor> lista;
+    
+    private final int COL_NOME = 0;   
+    private final int COL_SEXO = 1;    
+    private final int COL_IDADE = 2;
+    private final int COL_CPF = 3;       
+
+    public TMCadProfessor(List<Professor> lstProfessores) {        
+        lista = lstProfessores;        
+    }
+
+    @Override
+    public int getRowCount() {
+        return lista.size();
+    }
+
+    @Override
+    public int getColumnCount() {
+        return 4;
+    }
+
+    @Override
+    public Object getValueAt(int rowIndex, int columnIndex) {               
+        Professor aux = new Professor();
+        if (lista.isEmpty()) {
+            return aux;
+        } else {
+            aux = lista.get(rowIndex);
+
+            //verifica qual valor deve ser retornado
+            switch (columnIndex) {
+                case -1:
+                    return aux;
+                case COL_NOME:
+                    return aux.getNome();
+                case COL_SEXO:
+                    return aux.getSexo();
+                 case COL_IDADE:
+                    return aux.getIdade();
+                case COL_CPF:
+                    return aux.getCpf();
+                default: 
+                    break;
+            }
+        }
+        return aux;
+    }
+
+    @Override
+    public boolean isCellEditable(int rowIndex, int columnIndex) {
+        return false;
+    }
+
+    @Override
+    public String getColumnName(int column) {
+        switch (column) {
+            case COL_NOME:
+                return "Nome";
+            case COL_SEXO:
+                return "Sexo";
+            case COL_IDADE:
+                return "Idade"; 
+            case COL_CPF:
+                return "CPF";
+            default:
+                break;
+        }
+        return "";
+    }
+
+    @Override
+    public Class getColumnClass(int columnIndex) {
+//        if(columnIndex == COL_MATRICULA)
+//            return Boolean.class;
+        
+        return String.class;
+    }
+
+}
