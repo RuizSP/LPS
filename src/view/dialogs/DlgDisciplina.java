@@ -263,7 +263,7 @@ public class DlgDisciplina extends javax.swing.JDialog {
     
 
     private void btnAdicionarAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdicionarAlunoActionPerformed
-        DlgEscolhaAlunoOficial TelaAddAluno = new DlgEscolhaAlunoOficial(this, true, disciplina);
+        DlgEscolhaAluno TelaAddAluno = new DlgEscolhaAluno(this, true, disciplina);
         TelaAddAluno.setVisible(true);
     }//GEN-LAST:event_btnAdicionarAlunoActionPerformed
 
