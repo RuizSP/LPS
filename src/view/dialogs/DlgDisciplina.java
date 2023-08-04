@@ -272,9 +272,20 @@ public class DlgDisciplina extends javax.swing.JDialog {
     }//GEN-LAST:event_btnCancelarMouseEntered
 
     private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
-        // TODO add your handling code here:
+        this.limparCampos();
+        edtNome.setEnabled(false);
+        edtSemestre.setEnabled(false);
+        edtHorario.setEnabled(false);
+        btnAdicionarAluno.setEnabled(false);
+        btnAdicionarProfessor.setEnabled(false);
     }//GEN-LAST:event_btnCancelarActionPerformed
 
+    public void limparCampos() {
+        edtNome.setText("");
+        edtSemestre.setText("");
+        edtHorario.setText("");
+        edtDisciplina.setText("");
+    }
     private void btnCancelarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCancelarMouseExited
         btnCancelar.setBackground(null);
     }//GEN-LAST:event_btnCancelarMouseExited
