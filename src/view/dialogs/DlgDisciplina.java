@@ -48,9 +48,9 @@ public class DlgDisciplina extends javax.swing.JDialog {
         btnConfirmar = new javax.swing.JButton();
         lblNome = new javax.swing.JLabel();
         edtNome = new javax.swing.JTextField();
-        lblNome1 = new javax.swing.JLabel();
+        lblHorario = new javax.swing.JLabel();
         edtHorario = new javax.swing.JTextField();
-        lblNome2 = new javax.swing.JLabel();
+        lblSemestre = new javax.swing.JLabel();
         edtSemestre = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -179,11 +179,11 @@ public class DlgDisciplina extends javax.swing.JDialog {
             }
         });
 
-        lblNome1.setText("Horário:");
+        lblHorario.setText("Horário:");
 
         edtHorario.setEnabled(false);
 
-        lblNome2.setText("Semestre:");
+        lblSemestre.setText("Semestre:");
 
         edtSemestre.setEnabled(false);
 
@@ -209,11 +209,11 @@ public class DlgDisciplina extends javax.swing.JDialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(edtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(lblNome2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblSemestre, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(edtSemestre, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(lblNome1, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblHorario, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(edtHorario)
                         .addGap(105, 105, 105))))
@@ -226,9 +226,9 @@ public class DlgDisciplina extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblNome)
                     .addComponent(edtNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblNome2)
+                    .addComponent(lblSemestre)
                     .addComponent(edtSemestre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblNome1)
+                    .addComponent(lblHorario)
                     .addComponent(edtHorario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -337,9 +337,9 @@ public class DlgDisciplina extends javax.swing.JDialog {
     private javax.swing.JTextField edtHorario;
     private javax.swing.JTextField edtNome;
     private javax.swing.JTextField edtSemestre;
+    private javax.swing.JLabel lblHorario;
     private javax.swing.JLabel lblNome;
-    private javax.swing.JLabel lblNome1;
-    private javax.swing.JLabel lblNome2;
+    private javax.swing.JLabel lblSemestre;
     private javax.swing.JLabel lblTitulo;
     private javax.swing.JPanel panBotoes;
     private javax.swing.JScrollPane panDisciplina;

@@ -44,11 +44,11 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="edtNome" min="-2" pref="132" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="lblNome2" min="-2" pref="72" max="-2" attributes="0"/>
+                      <Component id="lblSemestre" min="-2" pref="72" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="edtSemestre" min="-2" pref="132" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="lblNome1" min="-2" pref="53" max="-2" attributes="0"/>
+                      <Component id="lblHorario" min="-2" pref="53" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="edtHorario" max="32767" attributes="0"/>
                       <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
@@ -65,9 +65,9 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblNome" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="edtNome" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblNome2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblSemestre" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="edtSemestre" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblNome1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblHorario" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="edtHorario" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -256,7 +256,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="edtNomeActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblNome1">
+    <Component class="javax.swing.JLabel" name="lblHorario">
       <Properties>
         <Property name="text" type="java.lang.String" value="Hor&#xe1;rio:"/>
       </Properties>
@@ -266,7 +266,7 @@
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblNome2">
+    <Component class="javax.swing.JLabel" name="lblSemestre">
       <Properties>
         <Property name="text" type="java.lang.String" value="Semestre:"/>
       </Properties>

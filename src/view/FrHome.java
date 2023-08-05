@@ -109,10 +109,6 @@ public class FrHome extends javax.swing.JFrame {
             listaDisciplinas.add(novaDisciplina);        
         }*/
         
-        for(int i =0;i<listaDisciplinas.size();i++){
-            System.out.println(listaDisciplinas.get(i).toString());
-        }
-        
         
     }//GEN-LAST:event_btnCadDisciplinaActionPerformed
 
