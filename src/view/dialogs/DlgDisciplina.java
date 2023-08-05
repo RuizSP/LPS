@@ -278,6 +278,7 @@ public class DlgDisciplina extends javax.swing.JDialog {
         edtHorario.setEnabled(false);
         btnAdicionarAluno.setEnabled(false);
         btnAdicionarProfessor.setEnabled(false);
+        disciplina.reiniciaDisciplina();
     }//GEN-LAST:event_btnCancelarActionPerformed
 
     public void limparCampos() {
