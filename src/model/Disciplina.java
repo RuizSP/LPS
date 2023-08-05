@@ -97,4 +97,11 @@ public class Disciplina {
         this.lstAlunos = lstAlunos;
     }        
     
+    public void reiniciaDisciplina(){
+        this.nome = "";
+        this.semestre = -1;
+        this.horario = "0h";
+        this.ministrante = new Professor();
+        this.lstAlunos = new ArrayList();
+    }
 }
